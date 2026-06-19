@@ -765,17 +765,30 @@
       var toggle = document.getElementById('navToggle');
       var links = document.getElementById('navLinks');
 
-      toggle.addEventListener('click', function () {
+      function closeMenu() {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
         var open = nav.classList.toggle('open');
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
 
-      // Close the menu after tapping a link (mobile)
+      // Close after tapping a link (mobile)
       links.addEventListener('click', function (e) {
-        if (e.target.tagName === 'A') {
-          nav.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-        }
+        if (e.target.tagName === 'A') closeMenu();
+      });
+
+      // Close when tapping anywhere outside the menu, so it never sits over the page content
+      document.addEventListener('click', function (e) {
+        if (nav.classList.contains('open') && !nav.contains(e.target)) closeMenu();
+      });
+
+      // Close on Escape
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
       });
     })();
 
