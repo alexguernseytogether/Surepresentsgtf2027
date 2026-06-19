@@ -10,7 +10,7 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Sure presents Guernsey Together Festival 2027 ‚Äî Register for Updates</title>
+  <title>Sure presents Guernsey Together Festival 2027 — Register for Updates</title>
   <meta name="description" content="Sure presents Guernsey Together Festival returns Saturday 12th June 2027. Register early for ticket updates and help shape the next festival. Registration does not grant entry.">
   <meta name="theme-color" content="#1f1b18">
 
@@ -25,13 +25,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
 
-  <!-- Hero image is the LCP element ‚Äî preload so it starts downloading immediately -->
+  <!-- Hero image is the LCP element — preload so it starts downloading immediately -->
   <link rel="preload" as="image" href="https://static.wixstatic.com/media/75969d_6be7635452724f8abd70ea96c4c80609~mv2.jpg" fetchpriority="high">
 
   <style>
     /* ============================================================
-       Sure presents Guernsey Together Festival 2027 ‚ landing page
-       Brand: pink #e51489 ¬∑ orange #f3a003 ¬∑ purple #9e60ec ¬∑ cream #f6f1eb
+       Sure presents Guernsey Together Festival 2027 — landing page
+       Brand: pink #e51489 · orange #f3a003 · purple #9e60ec · cream #f6f1eb
        ============================================================ */
 
     :root {
@@ -142,7 +142,7 @@
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     /* When embedded in Wix the iframe is sized to full content (the Wix page scrolls),
-       so a sticky header can't stick ‚Äî make it static and let nav scroll the parent. */
+       so a sticky header can't stick — make it static and let nav scroll the parent. */
     .embedded .site-header { position: static; backdrop-filter: none; }
     .nav {
       display: flex;
@@ -259,7 +259,7 @@
       padding-left: 12px;
     }
 
-    /* Headline partner lockup (Sure) ‚Äî only on dark backgrounds */
+    /* Headline partner lockup (Sure) — only on dark backgrounds */
     .partner-lockup { display: inline-flex; align-items: center; gap: 14px; }
     .partner-lockup .label {
       font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
@@ -501,7 +501,7 @@
         <!-- Headline partner -->
         <div class="partner-lockup hero-partner">
           <span class="label">Headline partner</span>
-          <img src="https://static.wixstatic.com/shapes/75969d_3c14d482db3f46d5a1ebcd88b80c20cb.svg" alt="Sure by Beyon ‚Äî headline partner">
+          <img src="https://static.wixstatic.com/shapes/75969d_3c14d482db3f46d5a1ebcd88b80c20cb.svg" alt="Sure by Beyon — headline partner">
         </div>
       </div>
     </div>
@@ -517,7 +517,7 @@
           <h2>Register for 2027 Ticket Updates</h2>
           <p>This is your chance to register for ticket information before full details are announced.</p>
           <p>By registering, you'll be added to the 2027 ticket update list and we'll contact you when tickets and further event information are released.</p>
-          <p class="fineprint">Registering doesn't reserve a ticket, parking space or motorhome space ‚ it just keeps you in the loop.</p>
+          <p class="fineprint">Registering doesn't reserve a ticket, parking space or motorhome space — it just keeps you in the loop.</p>
         </div>
 
         <div class="reveal">
@@ -531,7 +531,7 @@
                    Keep the container div + both scripts together.
                    ============================================================ -->
 
-              <!-- EVENTBRITE EMBED ‚Äî live. Event 1992202715952 -->
+              <!-- EVENTBRITE EMBED — live. Event 1992202715952 -->
               <div id="eventbrite-widget-container-1992202715952"></div>
               <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
               <script type="text/javascript">
@@ -553,7 +553,7 @@
               Form not loading?
               <a href="https://www.eventbrite.com/e/1992202715952" target="_blank" rel="noopener">Open the registration page&nbsp;&rarr;</a>
             </p>
-            <p class="embed-note">Registering is for ticket updates only ‚Äî it does not grant entry or reserve a ticket.</p>
+            <p class="embed-note">Registering is for ticket updates only — it does not grant entry or reserve a ticket.</p>
 
           </div>
         </div>
@@ -631,7 +631,7 @@
 
           <div class="policy-note">
             <h3>Tickets and motorhome spaces would be separate</h3>
-            <p>A motorhome space wouldn't include festival entry ‚Äî everyone staying over would still need their own valid festival ticket.</p>
+            <p>A motorhome space wouldn't include festival entry — everyone staying over would still need their own valid festival ticket.</p>
             <p>And buying a festival ticket wouldn't include a motorhome space, parking or any overnight access.</p>
             <p>If the motorhome area goes ahead, spaces would be limited and released separately, with their own terms, pricing and conditions.</p>
           </div>
@@ -727,7 +727,7 @@
           <!-- Headline partner -->
           <div class="partner-lockup" style="margin-top:22px;">
             <span class="label">Headline partner</span>
-            <img src="https://static.wixstatic.com/shapes/75969d_3c14d482db3f46d5a1ebcd88b80c20cb.svg" alt="Sure by Beyon ‚Äî headline partner">
+            <img src="https://static.wixstatic.com/shapes/75969d_3c14d482db3f46d5a1ebcd88b80c20cb.svg" alt="Sure by Beyon — headline partner">
           </div>
         </div>
 
@@ -749,7 +749,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>¬© <span id="year">2027</span> Guernsey Together Festival. Registration does not grant entry.</span>
+        <span>© <span id="year">2027</span> Guernsey Together Festival. Registration does not grant entry.</span>
         <span>Built for the Guernsey community.</span>
       </div>
     </div>
@@ -828,6 +828,7 @@
 
       window.addEventListener('load', postHeight);
       window.addEventListener('resize', queueHeight);
+      window.addEventListener('orientationchange', function () { queueHeight(); setTimeout(postHeight, 300); });
       // Images change height as they load in
       document.querySelectorAll('img').forEach(function (img) {
         if (!img.complete) img.addEventListener('load', queueHeight);
